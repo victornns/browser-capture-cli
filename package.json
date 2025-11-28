@@ -1,0 +1,50 @@
+{
+  "name": "browser-capture-cli",
+  "version": "1.0.0",
+  "description": "Automated website crawling, screenshot capture, video recording, and PDF generation using TypeScript + Puppeteer",
+  "main": "dist/index.js",
+  "bin": {
+    "browser-capture": "dist/index.js",
+    "crawl": "dist/cli/crawl.js",
+    "capture": "dist/cli/capture.js",
+    "record": "dist/cli/record.js",
+    "pdf": "dist/cli/pdf.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "clean": "rm -rf dist",
+    "lint": "eslint src --ext .ts",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "crawl": "ts-node src/cli/crawl.ts",
+    "capture": "ts-node src/cli/capture.ts",
+    "record": "ts-node src/cli/record.ts",
+    "pdf": "ts-node src/cli/pdf.ts"
+  },
+  "keywords": [
+    "puppeteer",
+    "screenshot",
+    "crawler",
+    "pdf",
+    "video",
+    "automation",
+    "cli"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "puppeteer": "^23.11.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "@typescript-eslint/eslint-plugin": "^6.19.0",
+    "@typescript-eslint/parser": "^6.19.0",
+    "eslint": "^8.56.0",
+    "prettier": "^3.2.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

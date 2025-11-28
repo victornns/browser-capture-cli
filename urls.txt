@@ -1,0 +1,8 @@
+# Example URLs
+# Add your URLs here, one per line
+# Lines starting with # are treated as comments
+
+https://example.com/
+https://example.com/about
+https://example.com/products
+https://example.com/contact
